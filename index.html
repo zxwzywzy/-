@@ -3,69 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>未来科技界面</title>
+    <title>未来科技 - 登录</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="cyber-background">
         <div class="grid"></div>
-        <div class="lines"></div>
+        <div class="circles"></div>
+        <div class="language-switch">
+            <button class="lang-btn" onclick="switchLanguage()">
+                <span class="lang-text">EN</span>
+                <div class="switch-line"></div>
+            </button>
+        </div>
     </div>
     
     <div class="container">
-        <div class="cyber-header">
-            <div class="header-decoration"></div>
-            <h1 class="glitch" data-text="未来科技">未来科技</h1>
+        <div class="login-card">
             <div class="scan-line"></div>
-            <div class="header-decoration"></div>
-        </div>
-        
-        <nav class="cyber-nav">
-            <a href="#" class="nav-item">
-                <span class="btn-content">首页</span>
-                <span class="btn-glitch"></span>
-            </a>
-            <a href="#" class="nav-item">
-                <span class="btn-content">项目</span>
-                <span class="btn-glitch"></span>
-            </a>
-            <a href="#" class="nav-item">
-                <span class="btn-content">关于</span>
-                <span class="btn-glitch"></span>
-            </a>
-            <a href="#" class="nav-item">
-                <span class="btn-content">联系</span>
-                <span class="btn-glitch"></span>
-            </a>
-        </nav>
-
-        <div class="content">
-            <div class="cyber-card">
-                <div class="card-header">
-                    <div class="corner top-left"></div>
-                    <div class="corner top-right"></div>
-                    <div class="header-bg"></div>
-                    <h2>欢迎来到未来</h2>
+            <div class="card-header">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="header-circle"></div>
+                <h2>系统登录</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="card-content">
+                <div class="system-info">
+                    <div class="info-item">系统状态: <span class="status">在线</span></div>
+                    <div class="info-item">安全级别: <span class="level">A+</span></div>
                 </div>
-                <div class="card-content">
-                    <p>这是一个充满未来科技感的界面设计</p>
-                    <div class="cyber-stats">
-                        <div class="stat">
-                            <div class="stat-value">98%</div>
-                            <div class="stat-bar"><div class="stat-fill"></div></div>
-                            <div class="stat-label">系统性能</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value">86%</div>
-                            <div class="stat-bar"><div class="stat-fill"></div></div>
-                            <div class="stat-label">能量水平</div>
-                        </div>
+                <div class="input-group">
+                    <label for="username">用户名</label>
+                    <div class="input-wrapper">
+                        <i class="icon-user"></i>
+                        <input type="text" id="username" class="cyber-input" placeholder="输入用户名">
+                        <div class="input-line"></div>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="corner bottom-left"></div>
-                    <div class="corner bottom-right"></div>
+                <div class="input-group">
+                    <label for="password">密码</label>
+                    <div class="input-wrapper">
+                        <i class="icon-lock"></i>
+                        <input type="password" id="password" class="cyber-input" placeholder="输入密码">
+                        <div class="input-line"></div>
+                    </div>
                 </div>
+                <div class="options">
+                    <label class="cyber-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        记住密码
+                    </label>
+                    <a href="#" class="forgot-password">忘记密码？</a>
+                </div>
+                <button class="login-btn">
+                    <span class="btn-content">登 录</span>
+                    <span class="btn-glitch"></span>
+                    <span class="btn-label">SYSTEM LOGIN</span>
+                </button>
+            </div>
+            <div class="card-footer">
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+                <div class="footer-text">SECURE CONNECTION</div>
             </div>
         </div>
     </div>
