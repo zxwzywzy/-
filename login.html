@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来科技 - 登录门户</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="container">
+        <div class="cyberpunk-container">
+            <div class="glitch-container">
+                <h1 class="glitch" data-text="FUTURE">FUTURE</h1>
+                <h2 class="cyber-sub">登录系统</h2>
+            </div>
+
+            <div class="form-container">
+                <div class="form-box login-form">
+                    <div class="cyber-input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="loginUsername" required autocomplete="off">
+                        <label>用户名</label>
+                        <span class="focus-border">
+                            <i></i>
+                        </span>
+                    </div>
+
+                    <div class="cyber-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" required>
+                        <label>密码</label>
+                        <span class="focus-border">
+                            <i></i>
+                        </span>
+                    </div>
+
+                    <div class="options">
+                        <label class="cyber-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            记住我
+                        </label>
+                        <a href="#" class="forgot-password">忘记密码?</a>
+                    </div>
+
+                    <button class="cyber-button" onclick="handleLogin(event)">
+                        <span class="cyber-button__glitch"></span>
+                        <span class="cyber-button__tag">登录</span>
+                        <span class="cyber-button__line"></span>
+                    </button>
+
+                    <div class="social-login">
+                        <p>其他登录方式</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-qq"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+                        </div>
+                    </div>
+
+                    <p class="switch-form">
+                        还没有账号？ <a href="#" onclick="toggleForms()">立即注册</a>
+                    </p>
+                </div>
+
+                <div class="form-box register-form" style="display: none;">
+                    <div class="cyber-input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="registerUsername" required autocomplete="off">
+                        <label>用户名</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+
+                    <div class="cyber-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="registerEmail" required>
+                        <label>电子邮箱</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+
+                    <div class="cyber-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerPassword" required>
+                        <label>密码</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+
+                    <div class="cyber-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" required>
+                        <label>确认密码</label>
+                        <span class="focus-border"><i></i></span>
+                    </div>
+
+                    <button class="cyber-button" onclick="handleRegister(event)">
+                        <span class="cyber-button__glitch"></span>
+                        <span class="cyber-button__tag">注册</span>
+                        <span class="cyber-button__line"></span>
+                    </button>
+
+                    <p class="switch-form">
+                        已有账号？ <a href="#" onclick="toggleForms()">返回登录</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html> 
