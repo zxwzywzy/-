@@ -3,74 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>未来科技 - 登录</title>
+    <title>我的网站</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // 简单的登录检查
+        window.onload = function() {
+            if (!sessionStorage.getItem('isLoggedIn')) {
+                window.location.href = 'login.html';
+            }
+        }
+    </script>
 </head>
 <body>
-    <div class="cyber-background">
-        <div class="grid"></div>
-        <div class="circles"></div>
-        <div class="language-switch">
-            <button class="lang-btn" onclick="switchLanguage()">
-                <span class="lang-text">EN</span>
-                <div class="switch-line"></div>
-            </button>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="login-card">
-            <div class="scan-line"></div>
-            <div class="card-header">
-                <div class="corner top-left"></div>
-                <div class="corner top-right"></div>
-                <div class="header-circle"></div>
-                <h2>系统登录</h2>
-                <div class="header-line"></div>
+    <header>
+        <nav>
+            <div class="logo">Logo</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>欢迎来到我的网站</h1>
+            <p>这是一个简单的示例页面</p>
+            <button class="cta-button">了解更多</button>
+        </section>
+
+        <section id="content">
+            <div class="card">
+                <h2>标题 1</h2>
+                <p>这里是一些示例内容...</p>
             </div>
-            <div class="card-content">
-                <div class="system-info">
-                    <div class="info-item">系统状态: <span class="status">在线</span></div>
-                    <div class="info-item">安全级别: <span class="level">A+</span></div>
-                </div>
-                <div class="input-group">
-                    <label for="username">用户名</label>
-                    <div class="input-wrapper">
-                        <i class="icon-user"></i>
-                        <input type="text" id="username" class="cyber-input" placeholder="输入用户名">
-                        <div class="input-line"></div>
-                    </div>
-                </div>
-                <div class="input-group">
-                    <label for="password">密码</label>
-                    <div class="input-wrapper">
-                        <i class="icon-lock"></i>
-                        <input type="password" id="password" class="cyber-input" placeholder="输入密码">
-                        <div class="input-line"></div>
-                    </div>
-                </div>
-                <div class="options">
-                    <label class="cyber-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        记住密码
-                    </label>
-                    <a href="#" class="forgot-password">忘记密码？</a>
-                </div>
-                <button class="login-btn">
-                    <span class="btn-content">登 录</span>
-                    <span class="btn-glitch"></span>
-                    <span class="btn-label">SYSTEM LOGIN</span>
-                </button>
+            <div class="card">
+                <h2>标题 2</h2>
+                <p>这里是更多示例内容...</p>
             </div>
-            <div class="card-footer">
-                <div class="corner bottom-left"></div>
-                <div class="corner bottom-right"></div>
-                <div class="footer-text">SECURE CONNECTION</div>
+            <div class="card">
+                <h2>标题 3</h2>
+                <p>这里是更多示例内容...</p>
             </div>
-        </div>
-    </div>
-    <div class="particles" id="particles"></div>
-    <script src="script.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 我的网站. 保留所有权利.</p>
+    </footer>
 </body>
 </html> 
