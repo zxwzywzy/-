@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米运动刷步数</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-login">
+        <button class="admin-btn">管理员</button>
+    </div>
+
+    <div class="login-modal">
+        <div class="login-content">
+            <h2>管理员登录</h2>
+            <div class="input-group">
+                <label for="adminUser">账号:</label>
+                <input type="text" id="adminUser" placeholder="请输入账号">
+            </div>
+            <div class="input-group">
+                <label for="adminPass">密码:</label>
+                <input type="password" id="adminPass" placeholder="请输入密码">
+            </div>
+            <div class="login-btns">
+                <button class="login-submit">登录</button>
+                <button class="login-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>小米运动刷步数</h1>
+        
+        <!-- 使用说明面 -->
+        <div class="instructions-page active">
+            <div class="instructions">
+                <h2>使用说明</h2>
+                <ol>
+                    <li>
+                        在应用商店中下载【Zepp Life】app
+                        <div class="download-btns">
+                            <a href="https://apps.apple.com/cn/app/zepp-life/id938469579" target="_blank" class="download-btn">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </a>
+                            <a href="https://app.mi.com/details?id=com.xiaomi.hm.health" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Android
+                            </a>
+                        </div>
+                    </li>
+                    <li>打开软件并选择"没有账号立即注册"<br><small>(一定要新注册，不能用小米手机的账号)</small></li>
+                    <li>进入"Zepp Life"app，依次点击：<br>我的 → 第三方接入 → 绑定你想同步数据的平台</li>
+                    <li>登录此刷步系统进行刷步</li>
+                </ol>
+            </div>
+            <button class="start-btn">开始刷步</button>
+        </div>
+
+        <!-- 刷步表单页面 -->
+        <div class="form-page">
+            <div class="form-container">
+                <div class="input-group">
+                    <label for="phone">手机号码:</label>
+                    <input type="tel" id="phone" placeholder="请输入手机号码">
+                </div>
+                <div class="input-group">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <div class="input-group">
+                    <label for="steps">步数:</label>
+                    <input type="number" id="steps" placeholder="请输入想要修改的步数">
+                </div>
+                <button class="submit-btn">提交修改</button>
+            </div>
+            <button class="back-btn">返回说明</button>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <p>免责声明：本工具仅供学习交流使用，请勿用于商业用途。使用本工具所产生的一切后果由使用者自行承担。</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
