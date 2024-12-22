@@ -243,27 +243,33 @@ document.addEventListener('DOMContentLoaded', async function() {
     const loginCancel = document.querySelector('.login-cancel');
     const adminUser = document.getElementById('adminUser');
     const adminPass = document.getElementById('adminPass');
+    const mainContainer = document.querySelector('.container');
+    const disclaimer = document.querySelector('.disclaimer');
 
     // 显示登录弹窗
     adminBtn.addEventListener('click', () => {
-        loginModal.style.display = 'block';
+        loginModal.classList.add('show');
+        mainContainer.style.display = 'none';
+        disclaimer.style.display = 'none';
     });
 
     // 隐藏登录弹窗
-    loginCancel.addEventListener('click', () => {
-        loginModal.style.display = 'none';
+    function hideLoginModal() {
+        loginModal.classList.remove('show');
+        mainContainer.style.display = 'block';
+        disclaimer.style.display = 'block';
         // 清空输入
         adminUser.value = '';
         adminPass.value = '';
-    });
+    }
+
+    // 点击取消按钮
+    loginCancel.addEventListener('click', hideLoginModal);
 
     // 点击弹窗外部关闭
     loginModal.addEventListener('click', (e) => {
         if (e.target === loginModal) {
-            loginModal.style.display = 'none';
-            // 清空输入
-            adminUser.value = '';
-            adminPass.value = '';
+            hideLoginModal();
         }
     });
 
