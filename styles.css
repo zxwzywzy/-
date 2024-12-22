@@ -29,15 +29,15 @@ body {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
     padding: 30px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
     max-width: 400px;
     position: relative;
     z-index: 2;
+    box-shadow: none;
 }
 
 .form-container {
@@ -59,33 +59,33 @@ label {
 
 input {
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     font-size: 16px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     color: white;
-    backdrop-filter: blur(5px);
 }
 
 input:focus {
     outline: none;
     border-color: #ff6700;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .submit-btn {
-    background: rgba(255, 103, 0, 0.3);
+    background: rgba(255, 103, 0, 0.1);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 12px;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
 }
 
 .submit-btn:hover {
-    background: rgba(255, 103, 0, 0.5);
+    background: rgba(255, 103, 0, 0.15);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 103, 0, 0.2);
 }
@@ -101,12 +101,12 @@ input:focus {
 .result-container {
     margin-top: 20px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     color: white;
     font-family: monospace;
     display: none;
-    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 h1 {
@@ -123,12 +123,11 @@ h1 {
 }
 
 .instructions {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .instructions h2 {
@@ -162,17 +161,16 @@ h1 {
     color: rgba(255, 255, 255, 0.6);
     font-size: 12px;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     max-width: 90%;
     z-index: 1000;
 }
 
 .disclaimer:hover {
     color: rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 576px) {
@@ -230,18 +228,17 @@ h1 {
     align-items: center;
     gap: 8px;
     padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     color: white;
     text-decoration: none;
     font-size: 0.9em;
     transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
 }
 
 .download-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-2px);
 }
 
@@ -251,7 +248,7 @@ h1 {
 
 /* 开始按钮样式 */
 .start-btn {
-    background: linear-gradient(45deg, #ff6700, #ff8533);
+    background: rgba(255, 103, 0, 0.1);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -263,19 +260,19 @@ h1 {
     letter-spacing: 1px;
     margin-top: 2rem;
     width: 100%;
-    box-shadow: 0 4px 15px rgba(255, 103, 0, 0.3);
+    box-shadow: none;
 }
 
 .start-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 103, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 103, 0, 0.1);
 }
 
 /* 返回按钮样式 */
 .back-btn {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0.8rem;
     border-radius: 8px;
     font-size: 0.9rem;
@@ -283,11 +280,10 @@ h1 {
     transition: all 0.3s ease;
     margin-top: 1rem;
     width: 100%;
-    backdrop-filter: blur(5px);
 }
 
 .back-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-2px);
 } 
 
@@ -300,18 +296,17 @@ h1 {
 }
 
 .admin-btn {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 8px 15px;
     border-radius: 20px;
     cursor: pointer;
-    backdrop-filter: blur(5px);
     transition: all 0.3s ease;
 }
 
 .admin-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-2px);
 }
 
@@ -323,23 +318,23 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 1001;
-    backdrop-filter: blur(5px);
+}
+
+.login-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
     padding: 30px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     width: 90%;
     max-width: 400px;
-    backdrop-filter: blur(10px);
 }
 
 .login-btns {
@@ -352,15 +347,15 @@ h1 {
     flex: 1;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 103, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 103, 0, 0.1);
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .login-cancel {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* 管理面板样式 */
@@ -411,4 +406,17 @@ h1 {
     font-size: 14px;
     line-height: 1.5;
     padding: 10px;
+}
+
+/* 让登录框内的输入框更明显 */
+.login-content input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* 让登录框的标题更明显 */
+.login-content h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
 } 
